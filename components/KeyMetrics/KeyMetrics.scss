@@ -1,0 +1,45 @@
+.keyMetrics{
+    border-radius: 8px;
+    background: #080a0d;
+    width: 100%;
+    min-width: 280px;
+    max-width: 450px;
+
+    &__title{
+        margin: 0px;
+        background: #6a798e; // #292f38;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-size: 1em;    
+    }
+
+    &__row,  &__row--odd{
+        margin: 0px;
+        padding: 10px;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+        & p{
+            margin:0px; 
+
+            &:last-child{
+                text-align: right;
+            }
+
+            &.negative{
+                color: #d22b3e;
+            }
+            &.positive{
+                color: #009C3F;;
+            }
+        }
+
+        &--odd{
+            background-color: #292f38;
+        }
+    }
+
+}

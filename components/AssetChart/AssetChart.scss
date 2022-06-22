@@ -1,0 +1,38 @@
+.AssetChart{
+    width: 100%;
+    border-radius: 8px;
+    background: #080a0d;
+    width: 100%;
+    min-width: 280px;
+    max-width: 600px;
+
+    &__title{
+        margin: 0px;
+        background: #6a798e;
+        padding: 14px 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1;
+        white-space: nowrap;
+        display: flex;
+        text-transform: uppercase;
+        gap: 10px;
+        align-items: center;
+
+        & span{
+            border: solid 1px white;
+            width: 180px;
+            display: inline-block;
+            color: white;
+            cursor: pointer;
+            padding: 2px 2px 2px 6px;
+            font-size: .75rem;
+            background: none;
+            text-align: left;
+            font-weight: 300;
+            border-radius: 4px;
+        }
+    }
+}

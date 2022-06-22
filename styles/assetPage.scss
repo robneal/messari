@@ -1,0 +1,89 @@
+.AssetHeader{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &__name{
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__image{
+        width: 48px;
+        height: 48px;
+    }
+
+    &__price{
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        color: #f3f4f6; 
+
+        & span{
+            margin-left: 5px;
+            &.negative{
+                color: #d22b3e;
+            }
+            &.positive{
+                color: #009C3F;;
+            }
+        }
+    }
+
+    &__symbol{
+        padding: 4px 6px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: .8rem;
+        margin-left: 8px;
+        border-radius: 4px;
+        background-color: #585E6A;
+        color: white;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: flex-start;
+        background: #292f38;
+        width: 100%;
+        gap:16px; 
+    
+        & Link, & a{
+            
+            height: 100%;
+            padding: 14px 8px;
+            min-width: 0;
+            min-height: 0;
+            text-transform: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.25;
+
+            &:hover{
+                color: #F3F4F6;
+                opacity: 0.8;
+            }
+
+            &.active{
+                border-bottom: solid;
+                color: #0091ea;
+                border-bottom: solid;
+            }
+           
+        }
+    }
+}
+
+.AssetContent{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px 10px;
+    flex-wrap: wrap;
+
+    // @media (max-width: 1150px){
+    //     justify-content: ;
+    // }
+}
