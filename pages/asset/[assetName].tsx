@@ -50,13 +50,13 @@ const AssetPage: NextPage = () => {
                 <nav className="AssetHeader__nav wrapper">
                     <Link href="#"><a className="active">Overview</a></Link>
                     <Link href="/"><a>Home</a></Link>
-                    <Link href="https://github.com/robneal" target="_blank"><a target="_blank">GitHub ↗</a></Link>
+                    <Link href="https://github.com/robneal/messari" target="_blank"><a target="_blank">GitHub ↗</a></Link>
                 </nav>
             </section>
 
             <section className="wrapper page-section AssetContent">
-                <KeyMetrics data={assetMetrics} />
                 <AssetChart assetName={assetName as string} />
+                <KeyMetrics data={assetMetrics} />
             </section>
         </>
     )

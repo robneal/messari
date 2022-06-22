@@ -2,9 +2,12 @@
     border-radius: 8px;
     background: #080a0d;
     width: 100%;
-    min-width: 280px;
-    max-width: 450px;
 
+    @media (min-width: 1100px){
+        min-width: 280px;
+        max-width: 450px;
+    }
+   
     &__title{
         margin: 0px;
         background: #6a798e; // #292f38;

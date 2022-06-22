@@ -20,8 +20,6 @@ const NavMenu: React.FunctionComponent = () => {
     
     const fetchData = async () => {
         const allAssets = await (await fetch(ALL_ASSETS)).json();
-
-        console.log(allAssets?.data);
         setAllAssets(allAssets?.data);
     }
 
